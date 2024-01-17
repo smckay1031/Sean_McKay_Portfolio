@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean McKay Porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,100;1,9..40,200;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <header id="header">
+        <div class="nav-container">
+            <div class="logo-icon">
+                <p>S</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#header">Home</a></li>
+                <li href="#">Projects</li>
+                <li><a href="#about">About</a></li>
+                <div class="nav-button-cont">
+                    <button type="button" class="contact-button" id="glow"> <a href="#contact">Contact</a></button>
+                </div>
+            </ul>
+        </div>
+    </header>
+    <hero>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="txt-cont">
+                    <h1>Beautiful Web Design</h1>
+                    <div class="subhead-hero">
+                        <h2><a class="my-name">Sean McKay</a> Web/Front End Developer</h2>
+                    </div>
+                    <button class="hero-button" id="glow"> <a>Learn More</a></button>
+                </div>
+            </div>
+            <div class="img-cont">
+                <img class="hero-img" src="images/SVG/SVG-Lineblob.svg" alt="">
+            </div>
 
+        </div>
+    </hero>
+    <main>
+        <article class="about" id="about">
+            <div class="about-top">
+                <div class="top-wrapper">
+                    <div class="portrait-cont">
+                        <img src="./images/20221112-3ADDDCDF-6C52-4313-85C6-8F0EAA296486_1_105_c_Original.jpg" alt="portrait-me" loading="lazy">
+                    </div>
+                    <div class="top-txt">
+                        <h2 class="about-me">About Me</h2>
+                        <p>
+                            &nbsp &nbsp &nbsp I am  a junior front end developer living in Chicago who is transitioning from the healthcare field to a carrer in tech.<br><br>
+                            &nbsp &nbsp &nbsp Over the last 7 years I been using the latest technologies in the profession of computed tomography and digital x-ray to help diagnose and care for patients. Over the years as a cat scan technologist, I have learned communication, problem solving, and analytical skills. In my spare time, I would also  in my creative side as a hobby photograpger learning skills of composition, image-exposure, color-science, and post image processing.<br><br>
+                            &nbsp &nbsp &nbsp Today I am taking the solutionist and artistic skills I have learned from imaging human anatomy and the world around me and turing them into beautiful websites and applications. I look forward to working with you!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="experince-cont">
+                <h2>Education & Experience</h2>
+                <ul>
+                    <li><a class="bold">Bachelors Degree</a> in Radiologic Science</li>
+                    <li><a class="bold">8 years </a> in Digital Radiography and Computed Tomography</li>
+                    <li> <a class="bold">6 months</a> Freelane web and front end developemt</li>
+                </ul>
+            </div>
+            <div class="about-bottom-cont">
+                <div class="language-cont">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>
+                            <img src="./images/SVG/html-5.svg" alt="icon">
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <img src="./images/SVG/icons8-css3.svg" alt="CSS-icon">
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <img src="./images/SVG/java-script.svg" alt="icon">
+                            <p>Javascipt</p>
+                        </li>                    
+                    </ul>                
+                </div>
+                <div class="dev-tool-cont">
+                    <h2>Dev Tools/Skills</h2>
+                    <div class="list-cont">
+                        <ul>
+                            <li>Git/Bash</li>
+                            <li>GitHub</li>
+                            <li>Visual Studio Code</li>
+                        </ul>
+                        <ul>
+                            <li>Responsive Design</li>
+                            <li>Accessibility</li>
+                            <li>Photoshop + Lightroom</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="contact" id="contact">
+            <form action="https://formsubmit.co/sean.mckay.web.dev@gmail.com" method="POST">
+                <h2>Contact Me</h2>
+                <div class="form-wrapper">
+                    <div class="first-name">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" name="first-name" id="first-name" autocomplete="name" required>
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" name="last-name" id="last-name" autocomplete="name" required>
+                    </div>
+                    <div class="phone">
+                        <label for="phone"> Phone *optional:</label>
+                        <input type="number" pattern="[0-9()]{10}" id="phone" autocomplete="mobile">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email Addres:</label>
+                        <input type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" autocomplete="email">
+                    </div>
+                    <div class="txt-area">
+                        <label for="message">Text:</label>
+                        <textarea name="message" id="message" cols="50" rows="6"></textarea>
+                    </div>
+                        <input type="submit" value="Submit" class="submit-button" id="glow"></button>
+                </div>
+            </form>
+        </div>
+    </main>   
+    <footer id="Social">
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/sean-mckay-2bb082186/" target="_blank">
+                    <img src="./images/SVG/linkedin.svg" alt="icon">
+                    <p>LinkedIn</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/smckay1031" target="_blank">
+                    <img src="./images/SVG/github.svg" alt="icon">
+                    <p>GitHub</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./images/SVG/email.svg" alt="icon">
+                    <p>sean.mckay.web.dev@gmail.com</p>
+                </a>
+            </li>
+        </ul>
+        <p class="copywrite">Desingned by Sean McKay 2024</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 303.85 235.12">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 7px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        font-family:'DM Sans', sans-serif;
+        font-size: 188.71px;
+      }
+
+      .cls-4 {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-2" d="M282.18,227c-1.28,2.73-3.81,4.51-6.75,5-11.91,1.97-199.05-1.51-231.25,0-10.8-2.03-9.77-11.15-2.75-12.5,5.53-1.06,57.91.8,71.5,0l1-9h76.5l1,9c15.94.94,76.65-1.24,84,0,3.42.58,7.87,3.6,6.75,7.5Z"/>
+      <g>
+        <path class="cls-1" d="M271.68,204.5c-77.97-1.97-156.04.91-234-.5-9.36-.17-30.73,2.06-33.5-19.25-2.16-16.64,1.65-129.61,0-158.5C6.67,14.18,14.86,5.99,26.93,3.5h249c11.78,2.57,20.32,9.82,23.25,21.75-2.1,31.97,2.89,136.67.5,157.5-1.67,14.52-13.99,22.53-28,21.75Z"/>
+        <path class="cls-4" d="M30.43,28h243l.75,151.75-243.75.75V28Z"/>
+      </g>
+    </g>
+    <text class="cls-3" transform="translate(29.28 170.69) scale(.88 1)"><tspan x="0" y="0">SM</tspan></text>
+  </g>
+</svg>
