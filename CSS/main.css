@@ -84,7 +84,6 @@ button a {
     justify-content: space-around;
     align-items: center;
     height: fit-content;
-    border-bottom: groove 2px rgba(255, 255, 255, 0.2);
 
 }
 
@@ -108,13 +107,18 @@ button a {
     color: black;
 }
 .nav-menu {
-    position: fixed;
-    right: 2vw;
+    width: 85%;
+    position: absolute;
+    right: 0px;
+    border-bottom: solid 1px white;
+    filter: blur(50%);
+    padding: 2vw;
 }
 
 .nav-menu, .mobile-nav {
-    display: inline-flex;
+    display: flex;
     align-items: end;
+    justify-content: end;
     gap: 2vw;
     list-style:none;
     color: rgb(245, 245, 239, .9);
@@ -128,26 +132,33 @@ button a {
 
 .mobile-nav {
 display: none;
-align-items: center;
-justify-content: center;
-flex-direction: column;
 flex-wrap: wrap;
+flex-direction: row;
+padding: 10px;
 height: 40vw;
 width: 40vw;
-background-color: rgba(20, 20, 20);
+background-color: rgba(50, 50, 50, 0.99);
 border-radius: 5px;
+border: solid 1px rgb(5, 5, 5);
+position: absolute;
+right: 5px;
+transition-duration: .2s;
 }
-.nav-button-cont, .mobile-nav li {
-    display: flex;
+.nav-button-cont, .mobile-nav, .mobile-nav li {
     align-items: center;
     justify-content: center;
 }
 
 .mobile-nav li {
-    flex: 1;
+    border-bottom: solid 1px aqua;
+    background-color: rgba(0, 255, 255, 0.15);
+    height: 20%;
+    display: flex;
+    flex: 1 1 100%;
     font-size: 14px;
-    width: 100%;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 255, 255, 0.2);
 }
 
 .nav-button-cont img {
@@ -156,12 +167,19 @@ border-radius: 5px;
     right: 4vw;
     filter: invert();
     z-index: 1;
+    cursor: pointer;
+    margin-top: 3.8vw;
+}
+
+.mobile-nav li:active {
+    background-color: rgba(0, 255, 255, 0.4);
 }
 
 @media  screen and (max-width: 660px) {
    
    .nav-container {
     padding: 50px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.25);
    }
 
     button {
@@ -181,7 +199,7 @@ border-radius: 5px;
 
 
     .nav-button-cont img {
-        display: block;
+        display: flex;
     }
 }
 /* Hero Section */
