@@ -37,7 +37,7 @@ a {
 
 @media  screen and (max-width:550px) {
     p {
-        font-size: 12px;
+        font-size: 14px;
     }
     
 }
@@ -131,34 +131,41 @@ button a {
 }
 
 .mobile-nav {
-display: none;
+display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 padding: 10px;
-height: 40vw;
+height: max-content;
 width: 40vw;
+border: solid 1px rgba(0, 255, 255, 0.5);
 background-color: rgba(50, 50, 50, 0.99);
 border-radius: 5px;
-border: solid 1px rgb(5, 5, 5);
 position: absolute;
-right: 5px;
+right: 0px;
 transition-duration: .2s;
 }
-.nav-button-cont, .mobile-nav, .mobile-nav li {
+.nav-button-cont, .mobile-nav, .mobile-nav li, .mobile-nav a {
     align-items: center;
     justify-content: center;
 }
 
-.mobile-nav li {
+.mobile-nav li  {
     border-bottom: solid 1px aqua;
-    background-color: rgba(0, 255, 255, 0.15);
-    height: 20%;
+    background-color: rgba(0, 255, 255, 0.4);
+    height: 50px;
     display: flex;
     flex: 1 1 100%;
     font-size: 14px;
     text-align: center;
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgba(0, 255, 255, 0.2);
+}
+
+.mobile-nav a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
 }
 
 .nav-button-cont img {
@@ -172,7 +179,8 @@ transition-duration: .2s;
 }
 
 .mobile-nav li:active {
-    background-color: rgba(0, 255, 255, 0.4);
+    background-color: rgba(0, 255, 255, 0.6);
+    transition-duration: .2s;
 }
 
 @media  screen and (max-width: 660px) {
@@ -489,12 +497,12 @@ grid-template-columns: 1fr 1fr;
     }
 
     .language-cont p  {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 8px;
     }
 
     .dev-tool-cont li, .experince-cont li {
-        font-size: 12px;
+        font-size: 14px;
     }  
 }
 
