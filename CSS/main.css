@@ -178,7 +178,7 @@ transition: ease-in-out;
     display: none;
     position: absolute;
     right: 4vw;
-    top: 2vw;
+    top: 3vw;
     filter: invert();
     z-index: 1;
     cursor: pointer;
