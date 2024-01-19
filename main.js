@@ -5,13 +5,13 @@ let exitIcon = document.getElementById('exit-nav');
 let navItem = document.getElementById('nav-item')
 
 function openNav() {
-        navBar.style.display = 'flex';
+        navBar.style.right = '0px';
         navIcon.style.display = 'none';
         exitIcon.style.display = 'flex';
 }
 
 function exitNav() {
-    navBar.style.display = 'none';
+    navBar.style.right= '-100%';
     navIcon.style.display = 'flex';
     exitIcon.style.display = 'none';
 }

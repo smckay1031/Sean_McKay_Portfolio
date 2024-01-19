@@ -73,6 +73,7 @@ button a {
 .nav-menu li:hover {
     color: white;
     text-shadow: 1px 1px 10px white;
+    font-weight: 600;
     transition-duration: .4s;
 }
 /* =========================================== Header ====================================================== */
@@ -138,39 +139,40 @@ button a {
 }
 
 .mobile-nav {
-display: none;
+display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 height: max-content;
-width: 40vw;
+width: 66%;
 border: solid 1px rgba(0, 255, 255, 0.5);
-background-color: rgba(50, 50, 50, 0.99);
+background-color: rgba(25, 25, 25, 0.7);
 border-radius: 5px;
 position: absolute;
-right: 0px;
-transition-duration: .6s;
-transition: ease-in-out;
+right: -100%;
+top: 1%;
+transition-duration: .8s;
+z-index: 100;
 }
 
-.nav-button-cont, .mobile-nav, .mobile-nav li, .mobile-nav a {
+.nav-button-cont, .mobile-nav, .mobile-nav li, .mobile-nav li a {
     align-items: center;
     justify-content: center;
 }
 
 .mobile-nav li  {
-    border-bottom: solid 1px aqua;
     padding: 25px;
     height: 25px;
     display: flex;
     flex: 1 1 100%;
     font-size: 14px;
-    text-align: center;
+    margin-left: 25px;
 }
 
 .mobile-nav a {
     display: flex;
     width: 100%;
-    height: 100%;
+    text-decoration: underline;
+    font-size: 16px;
 
 }
 
@@ -186,6 +188,11 @@ transition: ease-in-out;
 
 #exit-nav {
     display: none;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    filter: invert();
+
 }
 
 .mobile-nav li:active {
@@ -338,7 +345,6 @@ main {
     border-radius: .2rem;
     padding: 5vw 5vw 10vw 5vw;
     min-height: 10vw;
-    background-color: rgba(100, 100, 100, 0.1);
     border: solid 1px rgba(0, 255, 255, .6);
     box-shadow: 20px 20px 80px rgba(0, 255, 255, 0.21);
 }
