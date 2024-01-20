@@ -20,6 +20,27 @@ navIcon.addEventListener('click', openNav);
 exitIcon.addEventListener('click',exitNav);
 navItem.addEventListener('click', exitNav);
 
+// Change footer Email Icon sub text when touched 
+
+let emailIcon = document.getElementById('email-icon')
+let emailTxt = document.getElementById('Gmail');
+let emailAddress = document.getElementById('gmail-address');
+
+
+function showEmail() {
+    emailTxt.style.display = 'none';
+    emailAddress.style.display = 'block';
+    
+}
+
+function hideEmail() {
+    emailTxt.style.display = 'block';
+    emailAddress.style.display = 'none';
+
+}
+
+emailIcon.addEventListener('click', showEmail);
+emailAddress.addEventListener('click', hideEmail);
 
 
 
