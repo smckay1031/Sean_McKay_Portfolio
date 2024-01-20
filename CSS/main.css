@@ -421,10 +421,11 @@ main {
   border-bottom: solid 2px white;
   flex-grow: 1;
   flex: 100%;
-  padding: 1rem;
+  padding: .5rem;
   text-shadow: 1px 1px 10px black;
   color: white;
-  line-height: 30px;
+  line-height: 20px;
+  text-align: center;
 }
 
 .experince-cont ul {
