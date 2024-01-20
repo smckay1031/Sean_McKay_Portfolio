@@ -665,21 +665,6 @@ label {
   transition-duration: 0.4s;
 }
 
-#email-icon,
-#gmail-address {
-  cursor: pointer;
-}
-
-#Gmail,
-#gmail-address {
-  transition-duration: 0.4s;
-  transition: ease-in-out;
-}
-
-#gmail-address {
-  display: none;
-}
-
 @media screen and (max-width: 650px) {
   .contact {
     margin: 10rem 0px;
@@ -699,7 +684,7 @@ label {
   }
 }
 
-/* Footer Section */
+/* ======================================================== Footer Section =========================================================== */
 
 footer {
   margin: 0px;
@@ -751,8 +736,24 @@ footer img {
   left: 10px;
 }
 
+#email-icon,
+#gmail-address {
+  cursor: pointer;
+}
+
+#Gmail,
+#gmail-address {
+  transition-duration: 0.4s;
+  transition: ease-in-out;
+}
+
+#gmail-address {
+  display: none;
+}
+
 @media screen and (max-width: 550px) {
   footer li {
     font-size: 12px;
   }
 }
+
