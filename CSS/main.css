@@ -77,6 +77,23 @@ button a {
   font-weight: 600;
   transition-duration: 0.4s;
 }
+
+/* ===========================Animations ================= */
+
+@keyframes fromLeft {
+  from {
+    filter: blur(10px);
+    transform:translate(-10%);
+  }
+}
+
+@keyframes fromRight {
+  from {
+    opacity:0%;
+    transform:translate(10%);
+  }
+}
+
 /* =========================================== Header ====================================================== */
 
 #header {
@@ -238,6 +255,7 @@ button a {
   grid-template-rows: auto;
   align-content: center;
   border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+
 }
 
 .hero-content {
@@ -245,6 +263,8 @@ button a {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation-name: fromLeft;
+  animation-duration: .75s;
 }
 
 .img-container {
@@ -252,6 +272,13 @@ button a {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation-name: fromRight;
+  animation-duration: .9s;
+}
+
+.hero-img {
+  animation-name: fromRight;
+  animation-duration: .9s;
 }
 
 .my-name {
@@ -289,7 +316,6 @@ button a {
 .hero-button {
   border: solid 1px rgb(0, 255, 255);
   background-color: rgba(0, 255, 255, 0.1);
-  background-image: none;
   align-self: right;
   margin-left: 25px;
   box-shadow: 1px 10px 125px rgba(0, 255, 255, 0.8);
