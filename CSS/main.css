@@ -153,7 +153,7 @@ button a {
   background-color: rgba(25, 25, 25, 0.7);
   border-radius: 5px;
   position: absolute;
-  right: -100%;
+  right: -150%;
   top: 1%;
   transition-duration: 0.8s;
   z-index: 100;
@@ -195,6 +195,7 @@ button a {
   top: 25%;
   right: 2%;
   filter: invert();
+  cursor: pointer;
 }
 
 .mobile-nav li:active {
