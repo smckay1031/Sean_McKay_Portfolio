@@ -30,7 +30,7 @@ ul {
 }
 
 p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 a {
@@ -232,7 +232,7 @@ button a {
 .hero-container {
   margin-top: 8vw;
   width: 100%;
-  min-height: 550px;
+  height: 90vh;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: auto;
@@ -333,19 +333,19 @@ button a {
   }
 }
 
-/* ===============================About ============================================*/
+/* ========================================================== Projects Section =================================================*/
+
 main {
   margin: 10rem 10%;
 }
 
-/* ========================================================== Projects Section =================================================*/
 #projects {
   padding: 8rem 0rem;
 }
-
 #projects h2 {
   margin: 2rem 0rem 4rem 0rem;
   font-size: 3.5rem;
+  text-shadow: 1px 1px 50px rgba(0, 255, 255, 0.75);
 }
 
 .projects-cont {
@@ -353,7 +353,7 @@ main {
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
   align-items: center;
-  gap: 1rem;
+  gap: 4rem;
   padding: 0rem;
 }
 
@@ -362,13 +362,13 @@ main {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 15%;
 }
 
-.project-title {
+.project1-title {
   font-size: 2rem;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 30px;
   text-align: left;
   width: 100%;
 }
@@ -383,15 +383,33 @@ main {
   border-radius: 25px;
   padding: .15rem;
   margin: 10px;
-  box-shadow: 0px 0px 25px aqua;
+  box-shadow: 0px 0px 60prgba(0, 255, 255, 0.6)ua;
 }
 
 .project-button a {
   color: rgb(20, 20, 20);
   font-size: 12px;
+  font-weight: 600;
 }
 
-/* ===============================About ============================================*/
+.project-carousel ul {
+position: relative;
+border: solid 1px 1px white;
+}
+
+.project-carousel ul {
+  list-style: none;
+}
+
+.project-carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+
+/* =============================== About Section ============================================*/
 
 #about {
     padding-top: 5rem;
@@ -404,7 +422,6 @@ main {
   border-radius: 0.2rem;
   padding: 5vw 5vw 5vw 5vw;
   min-height: 50%;
-  border: solid 1px rgba(0, 255, 255, 0.6);
   box-shadow: 20px 20px 80px rgba(0, 255, 255, 0.21);
 }
 
@@ -415,7 +432,6 @@ main {
   line-height: 60px;
   text-align: left;
   margin: 2rem 1rem 4rem 1rem;
-  border-bottom: solid 1px aqua;
 }
 
 .portrait-cont {
@@ -620,7 +636,7 @@ main {
 
 .contact {
   margin-top: 10rem;
-  padding: 8rem 4rem;
+  padding: 6rem 4rem;
 }
 
 form {
@@ -628,9 +644,6 @@ form {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 2rem 4rem 4rem 4rem;
-  box-shadow: 10px 10px 50px rgba(0, 255, 255, 0.1);
-  border-radius: 5px;
 }
 
 form h6 {
@@ -640,7 +653,6 @@ form h6 {
   text-align: center;
   font-size: 3rem;
   line-height: 60px;
-  border-bottom: solid 1px aqua;
   text-shadow: 1px 1px 15px rgba(0, 255, 255, 0.8);
 }
 
