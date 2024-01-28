@@ -80,18 +80,39 @@ button a {
 
 /* ===========================Animations ================= */
 
-@keyframes fromLeft {
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.appear {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+
+
+@keyframes fromTop {
   from {
     filter: blur(10px);
-    transform:translate(-10%);
+    opacity: 0%;
+    transform:translateY(-100%);
   }
 }
 
 @keyframes fromRight {
   from {
     opacity:0%;
-    transform:translate(10%);
+    filter: blur(40px);
+    transform:translate(50%);
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+    filter: blur(40px);
+  } 
 }
 
 /* =========================================== Header ====================================================== */
@@ -255,6 +276,7 @@ button a {
   grid-template-rows: auto;
   align-content: center;
   border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
 
 }
 
@@ -263,8 +285,8 @@ button a {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation-name: fromLeft;
-  animation-duration: .75s;
+  animation-name: fromTop;
+  animation-duration: 1.5s;
 }
 
 .img-container {
@@ -272,13 +294,11 @@ button a {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation-name: fromRight;
-  animation-duration: .9s;
 }
 
 .hero-img {
   animation-name: fromRight;
-  animation-duration: .9s;
+  animation-duration: 1.5s;
 }
 
 .my-name {
@@ -409,7 +429,7 @@ main {
   border-radius: 25px;
   padding: .15rem;
   margin: 10px;
-  box-shadow: 0px 0px 60prgba(0, 255, 255, 0.6)ua;
+  box-shadow: 0px 0px 60px rgba(0, 255, 255, 0.6);
 }
 
 .project-button a {
@@ -481,15 +501,15 @@ border: solid 1px 1px white;
   shape-outside: circle();
 }
 
-.about-bottom-cont {
+#about-bottom-cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   min-height: 10vw;
 }
 
-.experince-cont,
-.experince-cont h4 {
+#experince-cont,
+#experince-cont h4 {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -498,7 +518,7 @@ border: solid 1px 1px white;
   flex-grow: 1;
 }
 
-.experince-cont {
+#experince-cont {
   height: 100px;
   padding: 0rem 1rem;
   border: solid 2px rgba(255, 255, 255, 0.6);
@@ -514,7 +534,7 @@ border: solid 1px 1px white;
   border-radius: 5px;
 }
 
-.experince-cont h4 {
+#experince-cont h4 {
   margin: 1rem 0rem 1rem 0rem;
   border-bottom: solid 2px white;
   flex-grow: 1;
@@ -526,11 +546,11 @@ border: solid 1px 1px white;
   text-align: center;
 }
 
-.experince-cont ul {
+#experince-cont ul {
   margin: 0px;
   padding: 0px;
 }
-.experince-cont li {
+#experince-cont li {
   margin: 1rem;
 }
 
@@ -579,7 +599,7 @@ border: solid 1px 1px white;
 
 .language-cont li,
 .dev-tool-cont li,
-.experince-cont li {
+#experince-cont li {
   list-style: none;
   flex-grow: 1;
   font-size: 16px;
@@ -613,7 +633,7 @@ border: solid 1px 1px white;
     font-size: 3.5rem;
     width: 60%;
   }
-  .about-bottom-cont {
+  #about-bottom-cont {
     grid-template-columns: 1fr;
   }
 
@@ -623,7 +643,7 @@ border: solid 1px 1px white;
   }
 
   .dev-tool-cont li,
-  .experince-cont li {
+  #experince-cont li {
     font-size: 14px;
   }
 }
@@ -648,12 +668,12 @@ border: solid 1px 1px white;
     margin: 2rem 1rem 2rem 0rem;
   }
 
-  .about-bottom-cont img {
+  #about-bottom-cont img {
     height: 32px;
     width: 32px;
   }
 
-  .experince-cont h4 {
+  #experince-cont h4 {
     font-size: 21px;
   }
 }
