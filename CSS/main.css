@@ -454,6 +454,39 @@ border: solid 1px 1px white;
   object-position: 50%;
 }
 
+@media screen and (max-width: 660px) { 
+  
+main {
+  margin: 0 5%;
+}
+
+#projects {
+  padding: 6rem 0rem;
+}
+
+
+  #projects h2 {
+    font-size: 1.8rem;
+  }
+
+  .left-cont {
+    padding: 0;
+  }
+
+  .project1-title {
+    font-size: 21px;
+  }
+
+  .project-txt {
+    font-size: 10px;
+  }
+
+.project-button a {
+  font-size: 10px;
+}
+
+
+}
 
 /* =============================== About Section ============================================*/
 
