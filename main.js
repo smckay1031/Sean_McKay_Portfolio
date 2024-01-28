@@ -35,7 +35,7 @@ function toggleEmail() {
 }
 emailIcon.addEventListener('click', toggleEmail);
 
-// Appear on Scroll in About  //
+// Appear on Scroll in About  (Intersect API used)//
 
 const faders = document.querySelectorAll(".fade-in"); 
 const appearOptions = {
