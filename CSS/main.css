@@ -71,6 +71,11 @@ button a {
   border: solid 2px aqua;
 }
 
+#glow:active {
+  opacity: 0.5;
+  transition-delay: 25ms;
+}
+
 .nav-menu li:hover {
   color: white;
   text-shadow: 1px 1px 10px white;
