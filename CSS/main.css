@@ -96,7 +96,6 @@ button a {
 }
 
 
-
 @keyframes fromTop {
   from {
     filter: blur(10px);
@@ -507,6 +506,7 @@ main {
   padding: 5vw 5vw 5vw 5vw;
   min-height: 50%;
   box-shadow: 20px 20px 80px rgba(0, 255, 255, 0.21);
+  overflow: hidden;
 }
 
 .about-me {
@@ -526,6 +526,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fromTop;
 }
 
 .portrait-cont img {

@@ -38,6 +38,7 @@ emailIcon.addEventListener('click', toggleEmail);
 // Appear on Scroll in About (Uses IntersectionObserver API)  //
 
 const faders = document.querySelectorAll(".fade-in"); 
+const sliders = document.querySelectorAll(".portrait-cont");
 const appearOptions = {
   threshold: .5,
   rootMargin: '0px 0px -100px 0px'
