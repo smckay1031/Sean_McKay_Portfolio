@@ -371,10 +371,11 @@ button a {
     grid-template-columns: 1fr;
     height: 80dvh;
     margin-bottom: 0rem;
+    margin-top:60px;
     background-image: url(../images/SVG/SVG-Lineblob.svg);
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: contain;
+    background-size: 90%;
     overflow: hidden;
   }
 
