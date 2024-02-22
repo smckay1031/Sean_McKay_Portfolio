@@ -11,7 +11,7 @@ function openNav() {
 }
 
 function exitNav() {
-  navBar.style.right = "-100%";
+  navBar.style.right = "-125%";
   navIcon.style.display = "flex";
   exitIcon.style.display = "none";
 }

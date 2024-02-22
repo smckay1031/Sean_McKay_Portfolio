@@ -367,9 +367,27 @@ button a {
 }
 
 @media screen and (max-width: 550px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    height: 80dvh;
+    margin-bottom: 0rem;
+    background-image: url(../images/SVG/SVG-Lineblob.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    background-color: rgb(20, 20, 20, .4);
+    animation: fromTop;
+  
+  }
+
   .txt-cont h1 {
     font-size: 2rem;
     line-height: 2rem;
+    padding: 0rem;
   }
 
   .subhead-hero p,
@@ -380,6 +398,9 @@ button a {
 
   .hero-button {
     font-size: 0.5rem;
+  }
+  .img-cont {
+    display: none;
   }
 }
 
@@ -460,17 +481,17 @@ border: solid 1px 1px white;
 
 @media screen and (max-width: 660px) { 
   
-main {
-  margin: 0 5%;
+main { 
+  margin: 0rem 5%;
 }
 
 #projects {
-  padding: 6rem 0rem;
+  padding: 5rem 0rem 10rem 0rem;
 }
 
 
   #projects h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .left-cont {
@@ -479,6 +500,7 @@ main {
 
   .project1-title {
     font-size: 21px;
+    line-height: 20px;
   }
 
   .project-txt {
@@ -489,8 +511,8 @@ main {
   font-size: 10px;
 }
 
-
 }
+
 
 /* =============================== About Section ============================================*/
 
@@ -509,13 +531,14 @@ main {
   overflow: hidden;
 }
 
-.about-me {
+.about h3 {
   width: 70%;
   font-size: 3.5rem;
   text-shadow: 1px 1px 50px rgb(0, 255, 255, 0.6);
   line-height: 60px;
   text-align: left;
   margin: 2rem 1rem 4rem 1rem;
+
 }
 
 .portrait-cont {
@@ -535,8 +558,8 @@ main {
   object-fit: cover;
   object-position: 40% 50%;
   border-radius: 50px 125px 75px 100px;
-  border: solid 2px rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 20px 100px rgb(0, 255, 255, 0.3);
+  box-shadow: 20px -60px 100px  rgb(0, 255, 255, 0.8);
+  border: solid 1px rgb(0, 255, 255, 0.8);
   shape-outside: circle();
 }
 
@@ -558,10 +581,10 @@ main {
 }
 
 #experince-cont {
-  height: 100px;
+  height: max-content;
   padding: 0rem 1rem;
   border: solid 2px rgba(255, 255, 255, 0.6);
-  padding: 50px;
+  padding: 0rem 2rem 2rem 2rem;
   margin: 0px;
   margin-bottom: 1rem;
   background-image: radial-gradient(
@@ -574,15 +597,16 @@ main {
 }
 
 #experince-cont h4 {
-  margin: 1rem 0rem 1rem 0rem;
   border-bottom: solid 2px white;
   flex-grow: 1;
   flex: 100%;
-  padding: .5rem;
+  padding: 2rem;
+  font-size: 2.5rem;
   text-shadow: 1px 1px 10px black;
   color: white;
   line-height: 20px;
   text-align: center;
+  margin: 2rem 0rem;
 }
 
 #experince-cont ul {
@@ -668,8 +692,8 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-  .about-me {
-    font-size: 3.5rem;
+  .about h3 {
+    font-size: 2.5rem;
     width: 60%;
   }
   #about-bottom-cont {
@@ -688,9 +712,6 @@ main {
 }
 
 @media screen and (max-width: 550px) {
-  main {
-    margin: 8rem 5%;
-  }
 
   .about-top p {
     font-size: 12px;
@@ -702,8 +723,8 @@ main {
     line-height: 30px;
   }
 
-  .about-me {
-    font-size: 1.5rem;
+  .about h3 {
+    font-size: 2rem;
     margin: 2rem 1rem 2rem 0rem;
   }
 
@@ -713,11 +734,12 @@ main {
   }
 
   #experince-cont h4 {
-    font-size: 21px;
+    font-size: 1.5rem;
+    padding: 1rem;
   }
 }
 
-/* Contact Form Section*/
+/* ==============================Contact Form Section=====================================*/
 
 .contact {
   margin-top: 10rem;
@@ -899,6 +921,7 @@ footer img {
 
 #gmail-address {
   display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 550px) {
