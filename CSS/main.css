@@ -381,6 +381,7 @@ button a {
   .hero-content {
     background-color: rgb(20, 20, 20, .4);
     animation: fromTop;
+    min-height: 80dvh;
   
   }
 
@@ -448,7 +449,9 @@ main {
   margin: 1rem 0rem;
 }
 
-.project-button {
+.project-1-button, 
+.project-2-button, 
+.project-3-button {
   background-color: aqua;
   color: rgb(20, 20, 20);
   border-radius: 25px;
@@ -457,7 +460,9 @@ main {
   box-shadow: 0px 0px 60px rgba(0, 255, 255, 0.6);
 }
 
-.project-button a {
+.project-1-button a,
+.project-2-button a,
+.project-3-button a {
   color: rgb(20, 20, 20);
   font-size: 12px;
   font-weight: 600;
@@ -478,6 +483,8 @@ border: solid 1px 1px white;
   object-fit: cover;
   object-position: 50%;
 }
+
+
 
 @media screen and (max-width: 660px) { 
   
