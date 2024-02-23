@@ -421,104 +421,63 @@ main {
   text-shadow: 1px 1px 50px rgba(0, 255, 255, 0.75);
 }
 
-.projects-cont {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-around;
-  align-items: center;
-  gap: 4rem;
-  padding: 0rem;
+.project-carousel  {
+  width: 40vw;
+  height: 40vh;
+  position: relative;
+  border: solid 1px white;
+
 }
 
-.left-cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 15%;
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+
 }
 
-.project1-title {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 30px;
-  text-align: left;
+.slide >img {
+  display: block;
   width: 100%;
-}
-
-.project-txt {
-  margin: 1rem 0rem;
-}
-
-.project-1-button, 
-.project-2-button, 
-.project-3-button {
-  background-color: aqua;
-  color: rgb(20, 20, 20);
-  border-radius: 25px;
-  padding: .15rem;
-  margin: 10px;
-  box-shadow: 0px 0px 60px rgba(0, 255, 255, 0.6);
-}
-
-.project-1-button a,
-.project-2-button a,
-.project-3-button a {
-  color: rgb(20, 20, 20);
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.project-carousel ul {
-position: relative;
-border: solid 1px 1px white;
-}
-
-.project-carousel ul {
-  list-style: none;
-}
-
-.project-carousel img {
   height: 100%;
-  width: 100%;
   object-fit: cover;
-  object-position: 50%;
+}
+
+.slide[data-active] {
+  opacity: 1;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 255, 255, 0.8);
+  border: none;
+  font-size: 2rem;
+  bottom: -25%;
+  color: rgba(0, 0, 0, .9);
+  cursor: pointer;
+  box-shadow: none;
+  padding: .5rem 1rem;
+}
+
+.carousel-button:focus {
+  outline: 2px solid white;
+}
+
+.carousel-button.prev {
+  left: 35%;
+}
+
+.carousel-button.next {
+  right: 35%;
+
 }
 
 
-
-@media screen and (max-width: 660px) { 
-  
-main { 
-  margin: 0rem 5%;
-}
-
-#projects {
-  padding: 5rem 0rem 10rem 0rem;
-}
-
-
-  #projects h2 {
-    font-size: 2rem;
-  }
-
-  .left-cont {
-    padding: 0;
-  }
-
-  .project1-title {
-    font-size: 21px;
-    line-height: 20px;
-  }
-
-  .project-txt {
-    font-size: 10px;
-  }
-
-.project-button a {
-  font-size: 10px;
-}
-
+.project-carousel >ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 

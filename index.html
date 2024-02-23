@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sean McKay Porfolio</title>
+    <title>Sean McKay Web/Front End Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,100;1,9..40,200;1,9..40,400;1,9..40,500&display=swap" rel="stylesheet">
@@ -55,44 +55,23 @@
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects-cont">
-                <div class="left-cont">
-                    <p class="project1-title" id="project-1">
-                        Number Guesser
-                    </p>
-                    <p class="project1-title" id="project-2">
-                        Coming Soon 
-                    </p>
-                    <p class="project1-title" id="project-3">
-                        Coming Soon
-                    </p>
+                <div class="project-carousel">
+                    <button class="carousel-button prev" id="glow"> &#8672 </button>
+                    <button class="carousel-button next" id="glow"> &#8674 </button>
+                    <ul>
+                        <li class="slide" data-active>
+                            <img src="images/Screenshot 2024-01-18 170231.png" alt="number-guesser">
+                        </li>
+                        <li class="slide">
+                            <img src="images/SVG/timer.svg" alt=" project-2">
+                        </li>
+                        <li class="slide">
+                            <img src="images/SVG/timer.svg" alt="project-3">
+                        </li>
+                    </ul>
+                </div>
             
-                    <p class="project-txt" id="project-1"> &nbsp &nbsp &nbsp This is one of my first projects I created with javascript and code academy. &nbsp It's a number guessing game that is pretty self explanitory. &nbsp Try to see if you can out guess the computer!</p>
-                    <p class="project-txt" id="project-2">  &nbsp More coming soon!</p>
-                    <p class="project-txt" id="project-3">  &nbsp More coming soon!</p>
-                    <button class="project-button" id="glow">
-                        <a href="https://smckay1031.github.io/Number-Guesser/" target="_blank">Explore</a>
-                        <a href="" target="_blank">Explore</a>
-                        <a href="" target="_blank">Explore</a> 
-                    
-
-                </div>
-                <div class="right-cont">
-                    <div class="project-carousel">
-                        <ul>
-                            <li id="project-1">
-                                <img src="images/Screenshot 2024-01-18 170231.png" alt="project-1">
-                            </li>
-                            <li id="project-2"> 
-                                <img src="/images/SVG/timer.svg" alt="">
-                            </li>
-                            <li id="project-3">
-                                <img src="/images/SVG/timer.svg" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-
         </section>
         <section class="about" id="about">
             <h3>About Me</h3>
