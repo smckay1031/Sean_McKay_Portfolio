@@ -414,6 +414,10 @@ main {
   text-shadow: 1px 1px 50px rgba(0, 255, 255, 0.75);
 }
 
+.visible {
+  display: block;
+}
+
 .projects-cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -492,7 +496,13 @@ main {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.176);
 }
 
+[data-project-info] {
+  display: none;
+}
 
+.visible {
+  display: block;
+}
 
 .project-title {
   font-size: 2rem;

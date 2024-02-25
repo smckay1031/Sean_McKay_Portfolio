@@ -62,6 +62,7 @@ faders.forEach(fader => {
 //Project Image Carousel Functionality
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
+//for image carousel of projects
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     const offset = button.dataset.carouselButton == "next" ? 1 : -1;
@@ -76,5 +77,17 @@ buttons.forEach(button => {
 
     slides.children[newIndex].dataset.active = true;
     delete activeSlide.dataset.active;
+
+    // to make txt visible test hide some elements
+
+    const activeText = document.querySelector(".visible");
+    const showText = document.getElementById(`${newIndex}`);
+
+    activeText.classList.toggle("visible");
+    showText.classList.toggle("visible");
+
+    
+  
+     
   })
 })
