@@ -510,6 +510,7 @@ main {
   text-shadow: 1px 1px 10px rgba(0, 255, 255, .6);
   animation: showContent;
   animation-duration: 1s;
+  padding-bottom: 1rem;
 }
 
 .project-txt {
@@ -517,6 +518,20 @@ main {
   animation: showContent;
   animation-duration: 1.4s;
   width: 100%;
+}
+[data-project-info] button {
+  font-size: .8rem;
+  margin: 1rem;
+  background-color: aqua;
+  border: solid 1px rgba(150, 150, 150, 0.8);
+  animation: showContent;
+  animation-duration: 1.5s;
+}
+
+[data-project-info] a {
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  padding: 1rem;
 }
 
 @keyframes showContent {
@@ -543,6 +558,23 @@ main {
  .carousel-button.next {
   right: 25%;
  }
+}
+
+@media screen and (max-width: 660px) {
+
+.project-title {
+  font-size: 1rem;
+}
+
+.project-txt {
+  font-size: .7rem;
+}
+
+
+[data-project-info] button {
+  font-size: .5rem;
+}
+  
 }
 
 
