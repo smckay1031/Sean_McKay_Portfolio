@@ -660,11 +660,11 @@ main {
 }
 
 #experince-cont h4 {
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px black;
   padding: 1rem;
   font-size: 2rem;
-  text-shadow: 1px 1px 4px white;
-  color: black;
+  text-shadow: 1px 1px 4px black;
+  color: white;
   font-weight: 800;
   line-height: 20px;
   text-align: center;
