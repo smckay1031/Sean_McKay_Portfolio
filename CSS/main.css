@@ -473,11 +473,13 @@ main {
 }
 
 .carousel-button.prev {
-  left: 30%;
+  left:35%;
+  margin-right: 5px;
 }
 
 .carousel-button.next {
-  right: 30%;
+  right: 35%;
+  margin-left:5px;
 
 }
 
