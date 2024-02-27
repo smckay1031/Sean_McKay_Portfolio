@@ -407,7 +407,28 @@ main {
 
 #projects {
   padding: 8rem 0rem;
+  position: relative;
 }
+
+.absolute.one {
+  top: 10%;
+  right: -20%;
+} 
+
+.absolute {
+  position: absolute;
+  z-index: -1;
+  filter: blur(60px);
+  height: 20vw;
+  width: 20vw;
+  border-radius: 100%;
+  background-color: rgba(0, 255, 255, 0.30);
+  box-shadow: 1px 1px 200px aqua;
+
+
+
+}
+
 #projects h2 {
   margin: 2rem 0rem 4rem 0rem;
   font-size: 3.5rem;
@@ -649,7 +670,6 @@ main {
   object-fit: cover;
   object-position: 40% 50%;
   border-radius: 50px 125px 75px 100px;
-  box-shadow: 20px -60px 100px  rgb(0, 255, 255, 0.8);
   border: solid 1px rgb(0, 255, 255, 0.8);
   shape-outside: circle();
 }
