@@ -424,17 +424,22 @@ main {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  
 }
 
 .project-carousel  {
-  width: 40vw;
-  height: 40vh;
+  width: 20vw;
+  height: 20vw;
   position: relative;
-
+  margin: 0px 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide {
   width: 100%;
+  height: 100%;
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -473,12 +478,12 @@ main {
 }
 
 .carousel-button.prev {
-  left:35%;
+  left:20%;
   margin-right: 5px;
 }
 
 .carousel-button.next {
-  right: 35%;
+  right: 20%;
   margin-left:5px;
 
 }
@@ -491,19 +496,22 @@ main {
 
 #timer {
   filter: invert();
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(25, 25 25, 0.2);
   border-radius: 15px;
-  max-width: 100%;
-  max-height:100%;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.176);
+  width: 100%;
+  height:100%;
+  border: inset 1px rgba(128, 128, 128, 0.1);
+  box-shadow: 1px 1px 8px rgba(25, 25, 25, 0.1);
 }
 
 [data-project-info] {
   display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .visible {
-  display: block;
+  display: flex;
 }
 
 .project-title {
@@ -528,6 +536,7 @@ main {
   border: solid 1px rgba(150, 150, 150, 0.8);
   animation: showContent;
   animation-duration: 1.5s;
+  max-width: 8rem;
 }
 
 [data-project-info] a {
@@ -552,31 +561,47 @@ main {
 
  @media screen and (max-width: 800px) { 
   .carousel-button {
-    bottom:-15%;
+    bottom:-30%;
   }
   .carousel-button.prev {
-    left: 25%;
+    left: 15%;
  }
  .carousel-button.next {
-  right: 25%;
+  right: 15%;
  }
+
+ .project-carousel {
+  padding: 0px;
+ }
+
 }
 
 @media screen and (max-width: 660px) {
 
-.project-title {
-  font-size: 1rem;
-}
 
-.project-txt {
-  font-size: .7rem;
-}
+  .project-title {
+    font-size: 1rem;
+  }
 
+  .project-txt {
+    font-size: .7rem;
+  }
 
-[data-project-info] button {
-  font-size: .5rem;
-}
-  
+  [data-project-info] {
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  [data-project-info] button {
+    font-size: .5rem;
+  }
+
+  .project-carousel {
+    height:150px;
+    width: 150px;
+    margin: 0px;
+  }
 }
 
 
